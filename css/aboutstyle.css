@@ -1,0 +1,150 @@
+body {
+  font-family: 'Roboto';
+  color: #7AA2AD;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px; 
+  
+}
+
+/* NAVI CSS */
+header {
+  position: sticky;
+  top: 0px;
+  background-color:rgba(255, 255, 255);
+  padding: 24px; 
+}
+/* mouse over link */
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+a:link {
+  color: #7AA2AD;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #7AA2AD;
+  text-decoration: none;
+}
+
+#navBar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 4%;
+}
+
+#logo {
+  display: flex;
+  width: 70%;
+}
+
+#navigation {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#navigation p {
+  cursor: pointer;
+}
+
+ 
+/* Category Grid CSS */
+
+section {
+  background: #F4E8E3 url("../images/aboutme-bg.png") no-repeat top;
+  background-position: center;
+  background-size: cover;
+}
+
+p {
+  line-height: 170%;
+  font-family: 'Roboto';
+  font-weight: 200;
+  font-size: 16px;
+  color: #1F1F1F;
+  letter-spacing: 1px;
+}
+
+  #aboutGrid {
+    display: grid;
+    grid-template-rows: 240px 40px 320px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "vivian about about about"
+    "vivian divider divider divider"
+    "vivian skill moreskill tools";
+    padding: 30px;
+  }
+
+  .aboutGridArea {
+ 
+    display: grid;
+    align-content: top;
+  }
+  
+  .aboutHeading {
+    font-family: 'Playfair Display';
+    padding: 15px;
+    height: 25px;
+    color: #856E71;
+    font-size: 26px;
+    font-weight: 200;
+    letter-spacing: 3px; 
+  }
+
+  #skill {
+    grid-area: skill;
+  }
+  
+  #moreskill {
+    grid-area: moreskill;
+  }
+
+  #tools {
+    grid-area: tools;  
+  }
+  
+  #about {
+    grid-area: about;
+  }
+  
+  #vivian {
+    align-items: middle;
+    grid-area: vivian; 
+    padding: 40px;
+  }
+  
+  #divider {
+    background-image:url("../images/white-triangle.png");
+    background-repeat:repeat-x;
+    margin-left: 10px;
+
+  }
+
+/* FOOTER CSS */
+
+#footer {
+  color: lightblue;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin: 0px 4%;
+  padding: 30px; 
+}
+
+#socialIcons{
+  margin-right: 100px;
+  display: flex;
+  width: 70%;
+}
+
+footer {
+  background-color:#747474;
+}
+
+

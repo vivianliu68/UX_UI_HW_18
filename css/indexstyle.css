@@ -1,0 +1,471 @@
+/* body {
+  font-family: 'Roboto';
+  color: #7AA2AD;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px; 
+} */
+
+/* NAVI CSS */
+header {
+  position: sticky;
+  top: 0px;
+  background-color:rgba(255, 255, 255);
+  padding: 24px; 
+}
+/* mouse over link */
+#navBar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 4%;
+}
+
+p a:hover {
+  color: #856E71;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+a:link {
+  color: #7AA2AD;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #7AA2AD;
+  text-decoration: none;
+}
+
+#logo {
+  display: flex;
+  width: 70%;
+}
+
+#navigation {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: 'Roboto';
+  color: #7AA2AD;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px; 
+}
+
+#navigation p {
+  cursor: pointer;
+}
+
+
+/* HERO CSS */
+
+#intro {
+  background-color:#E8C4B7; 
+  padding: 0 80px;
+}
+  
+.heroGridArea {  
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+  grid-template-columns: 75% 25%;
+  grid-template-areas:
+  "hiViv hiViv"
+  "about vivPic"
+  "downArrow downArrow";
+}
+
+#hiViv {
+  grid-area: hiViv;
+  float: left; 
+  margin-top: 40px;
+} 
+
+#about {
+  grid-area: about;
+  margin-top: 40px;
+} 
+
+#vivPic {
+  grid-area: vivPic;
+} 
+
+#downArrow {
+  grid-area: downArrow;
+  padding-bottom: 50px;
+  margin: -20px 50%;
+  align-items: center;
+}
+
+#bounceArrow {
+  animation: bounceArrow .7s infinite;
+}
+
+/* Hero headline */
+h1 {
+  font-family: 'Playfair Display';
+  font-size: 72px;
+  font-weight: 100;
+  letter-spacing: 2px; 
+  color: white;
+} 
+
+/* Hero sub-headline */
+h2 {
+  font-family: 'Playfair Display';
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 200;
+  letter-spacing: 1px; 
+  color:#5F422B;
+} 
+
+/* Section main header */
+h3 {
+  font-family: 'Playfair Display';
+  font-size: 50px;
+  font-weight: 100;
+  letter-spacing: 1px; 
+  color:#856E71;
+  text-align: center;
+  padding-top: 50px;
+} 
+
+/* Empty Box for anchor link */
+.sectionHead {
+  width: 10px;
+	height: 30px;
+}
+
+/* Case Study Grids */ 
+#caseStudy {
+  background-color:#F8F7F4;
+}
+
+#casestudyGrid {
+  margin: 0px;
+  display: grid;
+  padding: 40px;
+  grid-template-rows: 500px 500px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "epa buzzle"
+  "feedoc esytrek";
+}
+
+.casestudyGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 30px;
+  cursor: pointer;
+  display: grid;
+  align-content: top;
+}
+
+#epa {
+  grid-area: epa;
+  background-image: url("../images/EPA-card.png");
+}
+
+#buzzle {
+  grid-area: buzzle;
+  background-image: url("../images/buzzle-card.png");
+}
+
+#feedoc {
+  grid-area: feedoc;
+  background-image: url("../images/feedoc-card.png");
+}
+
+#esytrek {
+  grid-area: esytrek;
+  background-image: url("../images/easytrek-card.png");
+}
+
+/* Case Study Card Main Head */
+.casestudyHeader {
+  font-family: 'Playfair Display';
+  font-size: 46px;
+  font-weight: 100;
+  letter-spacing: 4;
+  text-align: top;
+  padding: 10px 35px;
+  height: 10px;
+  color: white;
+  position: absolute;
+  max-width: 550px;
+  z-index: auto;
+}
+
+/* Case Study Card Sub Head */
+h5 {
+  font-family: 'Roboto';
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px; 
+  text-align: top;
+  color: white;
+  position: absolute;
+  padding: 52px 38px;
+  line-height: 22px;
+}
+
+/* About me body text */
+h6 {
+  line-height: 170%;
+  font-family: 'Roboto';
+  font-weight: 200;
+  font-size: 14px;
+  color: #1F1F1F;
+  letter-spacing: 1px;
+}
+
+.aboutMe {
+  background: #F4E8E3 url("../images/aboutme-bg.png") no-repeat top;
+  background-position: center;
+  background-image: cover;
+  background-repeat: no-repeats;
+  height: 100%;
+}
+
+h6 {
+  line-height: 150%;
+  font-family: 'Roboto';
+  font-weight: 200;
+  font-size: 16px;
+  color: #1F1F1F;
+  letter-spacing: 1px;
+}
+
+  .aboutHeading {
+    font-family: 'Playfair Display';
+    height: 25px;
+    color: #856E71;
+    font-size: 26px;
+    font-weight: 200;
+    letter-spacing: 3px; 
+  }
+  
+  #aboutText {
+    margin:0px 70px 0px 432px;
+  }
+
+
+  .vivL {
+    float: left;
+    padding:50px;
+  }
+
+
+  .container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
+  }
+
+  .flexItem {
+    margin:10px 70px 100px 10px;
+  }
+
+  .flex {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+  }
+ 
+  #row {
+    flex-direction: row;
+  }
+  
+  
+
+
+/*CONTACT  FORM*/
+
+.contactBg {
+  background-image: linear-gradient(to bottom, rgba(232,245,252,1), rgba(252,238,231,1));
+  width: 100%;
+}
+
+.block_element {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  
+}
+
+input {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid#7BC3D8;
+  border-radius: 5px;
+}
+
+input[type=submit]:hover {
+  background-color:#7BC3D8;
+  border:1px solid #7BC3D8;
+}
+
+h4 {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 1px; 
+  color:#7D8D8D;
+  text-align: center;
+  line-height: 170%;
+} 
+
+input[type=textarea] {
+  width: 100%;
+  height: 120px;
+  padding: 12px 20px;
+  background-color:white;
+  resize: none;
+}
+
+.submit {
+  margin-top: 20px;
+  font-size: 10pt;
+  background-color: #E98F76;
+  border: 1px solid #E98F76;
+  width: 200px;
+  color: white;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  padding: 20px;
+  align-content: center;
+  margin-bottom: 140px;
+}
+
+/* FOOTER CSS */
+
+#footer {
+  color: #7AA2AD;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin: 0px 4%;
+  padding: 30px; 
+  font-family: 'Roboto';
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px; 
+}
+
+#socialIcons{
+  margin-right: 100px;
+  display: flex;
+  width: 70%;
+}
+
+footer {
+  background-color:#424545; 
+}
+
+
+
+/* .preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100000;
+  background-color: white;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+.preloader img {
+  animation: spin 3s ease;
+  transition: all;
+  width: 200px;
+  margin: 0 auto;
+} */
+
+/* .bounceMe {
+  animation: bounceArrow .7s infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+
+@keyframes bounceArrow {
+  from {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 7px;
+  }
+  to {
+    margin-top: 0px;
+  }
+} */
+
+
+@media only screen and (max-width: 1000px) {
+  #navigation {
+    display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #intro {
+      position: static;
+      margin: 0px;
+      }
+
+    #heroGrid{
+      grid-template-rows:
+      300px 300px 300px 300px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "hiViv"
+      "about" 
+      "vivPic"
+      "downArrow";
+    }
+  
+    #casestudyGrid {
+      grid-template-rows:
+      300px 300px 300px 300px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "epa"
+      "buzzle"
+      "feedoc"
+      "esytrek";
+      }
+
+      #aboutMe {
+        grid-template-rows:
+        300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "vivL"
+        "aboutText"
+        "container"
+  
+        }
+
+  }
+
